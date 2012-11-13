@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>&mdash; brandon thomas &mdash;</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta http-equiv="content-language" content="en">
+
+		<!-- Handheld Support -->
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<!-- Style -->
+		<link rel="stylesheet" type="text/css" href="theme.css" />
+
+		<!-- Import Ubuntu Light, Normal, Italic, and Medium -->
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,400italic' 
+			rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div id="main">
+			<div id="logo"><a 
+				href="#">brand.io</a></div>
+
+			<div id="content">
+
+				<!--<div id="sidelink">
+					A <br>
+					B <br>
+					C <br>
+					D <br>
+					E <br>
+				</div>-->
+
+				<h2>about me</h2>
+				<div id="about" class="hyphenate">
+				<div id="portrait"><img src="./img/brandon1.jpg"></div>
+				Brandon Thomas is a triple major undergrad at Southern Polytechnic State University in the Computer Science, Biology, and Chemistry programs. Brandon loves science, uses Linux and vim, and programs primarily in Python, Javascript, and C++. Computing interests include machine learning and computer graphics. After graduation Brandon intends to study computational metabolomics or possibly found a startup company.
+				</div>
+
+
+				<!-- Activity feed -->
+				<!--<h2>web activity</h2>
+				<div id="activity"></div>
+				<p>The activity feed will be online within the week.</p>-->
+
+				<!-- Projects -->
+				<h2>projects</h2>
+				<div id="projects" class="hyphenate">Loading...</div>
+	
+				<!-- Youtube Videos -->
+				<h2>videos</h2>
+				<div id="videos">Loading...</div>
+
+				<!-- Presentations --> 
+				<h2>presentations</h2>
+				<div id="presentations" class="hyphenate">Loading...</div>
+
+				<!--<h2>papers and research</h2>--> 
+	
+				<!--<h2>notes</h2>
+				<div id="notes"></div>
+				<p>These will be online by summer's end.</p>-->
+
+				<h2>contact</h2>
+				<ul>
+					<li><h3>echelon at gmail dot com</h3></li>
+					<li><h3>678&middot;744&middot;6080</h3></li>
+				</ul>
+
+				<h2>colophon</h2>
+				<div id="colophon" class="hyphenate">
+					<p>The background animation was constructed from a trimmed portion of the PDB structure 2KE6, &ldquo;SOLUTION STRUCTURE OF K10 TLS&rdquo;. It represents an engineered RNA hairpin in <em>Drosophila</em>.</p>
+
+					<p>Some of the icons used in this page have been taken from Wikipedia.
+					The background is from subtlepatterns.com.</p>
+				</div>
+			</div>
+
+			<div id="name">brandon thomas</div>
+
+		</div>
+
+		<div id="canvas"></div> 
+	
+		<script type="text/javascript" src="./js/lib/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="./js/lib/Three.js"></script>
+		<script type="text/javascript" src="./js/pdb.js"></script>
+		<script type="text/javascript" src="./js/main.js"></script>
+		<script type="text/javascript" src="./content.js"></script>
+		<script type="text/javascript" src="./js/lib/Hyphenator.js"></script>
+
+		<script type="text/javascript"> 
+			$(function() { 
+				init(); 
+				installItems('#projects', PROJECTS);
+				installItems('#presentations', PRESENTATIONS);
+				installVideos();
+				Hyphenator.run();
+			});
+		</script>
+	</body>
+</html>
