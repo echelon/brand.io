@@ -28,7 +28,8 @@ body {
 	font-family: "Ubuntu", helvetica, arial;
 	text-align: justify;
 	color: #000;
-	background-color: rgba(240, 240, 240, 0.70);
+	background-color: rgba(255, 255, 255, 0.40);
+	background-image: url('img/bright_squares_c.png');
 	-webkit-border-radius: 25px;
 	-moz-border-radius: 25px;
 	border-radius: 25px;
@@ -192,8 +193,12 @@ canvas {
 		inset 0 0 1px rgba(238,16,33,1);
 }
 
-a {
+a:link, a:visited {
 	color: #ff1124;
+	text-decoration: underline;
+}
+a:hover, a:active {
+	color: #caa;
 	text-decoration: underline;
 }
 
@@ -237,4 +242,8 @@ ul {
 	border-radius: 18px;
 	-webkit-border-radius: 18px;
 	-moz-border-radius: 18px;
+}
+
+li {
+	list-style-position: inside;
 }

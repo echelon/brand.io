@@ -1,0 +1,31 @@
+[
+	{
+		"title": "A Boolean Logical Model of TCR Signaling",
+		"date": "Apr, 2012",
+		"descr": "Discusses a paper on building a Boolean network representing the T-Cell signaling pathways downstream of the TCR.",
+		"img": "http://possibilistic.org/presentation/advimm/img/advimm/matrix.png",
+		"url": "http://possibilistic.org/presentation/advimm/"
+	},
+	{
+		"title": "Optimization of GCxGC/MS",
+		"date": "Nov, 2011",
+		"descr": "Computational tools for optimizing analytical chemistry techniques for exploration of the metabolome.",
+		"img": "http://possibilistic.org/presentation/analytical/img/analytical/autosampler.jpg",
+		"url": "http://possibilistic.org/presentation/analytical/"
+	},
+	{
+		"title": "Hantavirus Pulmonary Syndrome",
+		"date": "Nov, 2010",
+		"descr": "Presentation on Hantavirus molecular biology and pathology.",
+		"img": "http://possibilistic.org/presentation/hps/img/SNV_TEM.jpg",
+		"url": "http://possibilistic.org/presentation/hps/"
+	},
+	{
+		"title": "Alzheimer's physiopathy",
+		"date": "Apr, 2010",
+		"descr": "My 60-minute presentation on the physiology of Alzheimer's disease with respect to the Amyloid-&beta; and Tau hypothesis.",
+		"img": "http://possibilistic.org/presentation/alzheimers-cell-phys/img/tau-pdb.png",
+		"url": "http://possibilistic.org/presentation/alzheimers-cell-phys/"
+	}
+]
+

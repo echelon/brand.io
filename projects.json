@@ -1,0 +1,36 @@
+[	{
+		"title": "Robotics Mischief",
+		"date": "2012",
+		"descr": "A C++ robot controller daemon that takes instructions over a ZeroMQ socket. Clients have been written for joystick, keyboard, and computer vision/AI control.",
+		"img": "/img/icons/robot.png",
+		"url": "https://github.com/echelon/robot2"
+	},
+	{
+		"title": "Javascript Slideshow Software",
+		"date": "2010&ndash;2012",
+		"descr": "Parses Markdown files into presentation slides. Markdown makes writing and editing simple. Includes a timer and transition effects.",
+		"img": "/img/icons/projector.jpg",
+		"url": "https://github.com/echelon/present.js"
+	},
+	{
+		"title": "Javascript IP Cam Viewer",
+		"date": "2011",
+		"descr": "Displays a wall of webcams or security cameras. Beware of memory leaks; page auto-refresh to purge memory needs to be implemented.",
+		"img": "/img/icons/ipcam.jpg",
+		"url": "/misc/ipcam/"
+	},
+	{
+		"title": "Open Source Flylab Clone",
+		"date": "2010",
+		"descr": "Designed to replace proprietary paywall software published by expensive textbook companies. Work in progress.",
+		"img": "/img/icons/drosophila.jpg",
+		"url": "/misc/flylab/"
+	},
+	{
+		"title": "StrategyWiki",
+		"date": "2005",
+		"descr": "A copyleft videogame strategy guide wiki.",
+		"img": "/img/icons/strategywiki.png",
+		"url": "http://strategywiki.org/wiki/Main_Page"
+	}
+]

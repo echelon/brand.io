@@ -37,23 +37,26 @@
 				Brandon Thomas is a triple major undergrad at Southern Polytechnic State University in the Computer Science, Biology, and Chemistry programs. Brandon loves science, uses Linux and vim, and programs primarily in Python, Javascript, and C++. Computing interests include machine learning and computer graphics. After graduation Brandon intends to study computational metabolomics or possibly found a startup company.
 				</div>
 
-
 				<!-- Activity feed -->
 				<!--<h2>web activity</h2>
 				<div id="activity"></div>
 				<p>The activity feed will be online within the week.</p>-->
 
-				<!-- Projects -->
 				<h2>projects</h2>
-				<div id="projects" class="hyphenate">Loading...</div>
+				<div id="projects" class="hyphenate">
+					${projects}
+				</div>
 	
-				<!-- Youtube Videos -->
 				<h2>videos</h2>
-				<div id="videos">Loading...</div>
+				<div id="videos">
+					${videos}
+				</div>
 
 				<!-- Presentations --> 
 				<h2>presentations</h2>
-				<div id="presentations" class="hyphenate">Loading...</div>
+				<div id="presentations" class="hyphenate">
+					${presents}
+				</div>
 
 				<!--<h2>papers and research</h2>--> 
 	
@@ -69,10 +72,12 @@
 
 				<h2>colophon</h2>
 				<div id="colophon" class="hyphenate">
-					<p>The background animation was constructed from a trimmed portion of the PDB structure 2KE6, &ldquo;SOLUTION STRUCTURE OF K10 TLS&rdquo;. It represents an engineered RNA hairpin in <em>Drosophila</em>.</p>
+					<!--<p>The background animation was constructed from a trimmed portion of the PDB structure 2KE6, &ldquo;SOLUTION STRUCTURE OF K10 TLS&rdquo;. It represents an engineered RNA hairpin in <em>Drosophila</em>.</p>-->
 
 					<p>Some of the icons used in this page have been taken from Wikipedia.
-					The background is from subtlepatterns.com.</p>
+					The background is from subtlepatterns.com. The fonts are Ubuntu, Nuropol X, and Quantum Round.</p>
+
+					<p>This page was compiled to static HTML on ${compileTime}</p>
 				</div>
 			</div>
 
@@ -84,17 +89,19 @@
 	
 		<script type="text/javascript" src="./js/lib/jquery-1.8.2.min.js"></script>
 		<script type="text/javascript" src="./js/lib/Three.js"></script>
-		<script type="text/javascript" src="./js/pdb.js"></script>
-		<script type="text/javascript" src="./js/main.js"></script>
-		<script type="text/javascript" src="./content.js"></script>
+		<!--<script type="text/javascript" src="./js/pdb.js"></script>-->
+		<!--<script type="text/javascript" src="./js/main.js"></script>-->
+		<!--<script type="text/javascript" src="./content.js"></script>-->
+		<script type="text/javascript" src="./js/youtube.js"></script>
 		<script type="text/javascript" src="./js/lib/Hyphenator.js"></script>
 
 		<script type="text/javascript"> 
 			$(function() { 
-				init(); 
-				installItems('#projects', PROJECTS);
-				installItems('#presentations', PRESENTATIONS);
-				installVideos();
+				//init(); 
+				//installItems('#projects', PROJECTS);
+				//installItems('#presentations', PRESENTATIONS);
+				//installVideos();
+				animateVideos();
 				Hyphenator.run();
 			});
 		</script>
