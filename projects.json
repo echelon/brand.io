@@ -17,14 +17,14 @@
 		"date": "2011",
 		"descr": "Displays a wall of webcams or security cameras. Beware of memory leaks; page auto-refresh to purge memory needs to be implemented.",
 		"img": "/img/icons/ipcam.jpg",
-		"url": "/misc/ipcam/"
+		"url": "http://posbl.org/misc/ipcam/"
 	},
 	{
 		"title": "Open Source Flylab Clone",
 		"date": "2010",
 		"descr": "Designed to replace proprietary paywall software published by expensive textbook companies. Work in progress.",
 		"img": "/img/icons/drosophila.jpg",
-		"url": "/misc/flylab/"
+		"url": "http://posbl.org/misc/flylab/"
 	},
 	{
 		"title": "StrategyWiki",

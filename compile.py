@@ -5,8 +5,8 @@ Copyright 2012 Brandon Thomas.
 """
 
 import json
+import datetime
 from string import Template
-from datetime import datetime
 
 TEMPLATE = 'template.html'
 OUTPUT = 'public/index.html'
@@ -56,6 +56,13 @@ def make_items(items):
 
 	return html
 
+class EST(datetime.tzinfo):
+	"""From StackOverflow"""
+	def utcoffset(self, dt):
+		return datetime.timedelta(hours=-5)
+
+	def dst(self, dt):
+		return datetime.timedelta(0)
 
 def save_template(fname, tpl):
 
@@ -78,7 +85,7 @@ def save_template(fname, tpl):
 		'projects': make_projects(),
 		'videos': make_videos2(),
 		'presents': make_presents(),
-		'compileTime': datetime.now().strftime(TIME_FMT)
+		'compileTime': datetime.datetime.now(EST()).strftime(TIME_FMT)
 	}
 	html = tpl.safe_substitute(t)
 	f = open(fname, 'w')

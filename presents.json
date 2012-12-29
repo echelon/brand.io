@@ -1,5 +1,12 @@
 [
 	{
+		"title": "Shanghai Metro",
+		"date": "Nov, 2012",
+		"descr": "Presentation for STS discussing the Shanghai Metro Rail system.",
+		"img": "/present/sts/img/logo.png",
+		"url": "/present/sts/"
+	},
+	{
 		"title": "A Boolean Logical Model of TCR Signaling",
 		"date": "Apr, 2012",
 		"descr": "Discusses a paper on building a Boolean network representing the T-Cell signaling pathways downstream of the TCR.",

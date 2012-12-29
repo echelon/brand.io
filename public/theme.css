@@ -1,3 +1,46 @@
+/* 
+Copied from Google's font CDN. 
+Hopefully they don't change the internal URIs.
+*/
+@font-face {
+	font-family: 'Ubuntu';
+	font-style: italic;
+	font-weight: 400;
+	src: 
+		local('Ubuntu Italic'), 
+		local('Ubuntu-Italic'), 
+		url(http://themes.googleusercontent.com/static/fonts/ubuntu/v4/kbP_6ONYVgE-bLa9ZRbvvvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 400;
+	src: 
+		local('Ubuntu'), 
+		url(http://themes.googleusercontent.com/static/fonts/ubuntu/v4/_xyN3apAT_yRRDeqB3sPRg.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 300;
+	src: 
+		local('Ubuntu Light'), 
+		local('Ubuntu-Light'), 
+		url(http://themes.googleusercontent.com/static/fonts/ubuntu/v4/_aijTyevf54tkVDLy-dlnD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 500;
+	src: 
+		local('Ubuntu Medium'), 
+		local('Ubuntu-Medium'), 
+		url(http://themes.googleusercontent.com/static/fonts/ubuntu/v4/OsJ2DjdpjqFRVUSto6IffD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
 @font-face {
 	font-family: "neuropol_x";
 	src: url('./font/neuropol_x.ttf');
@@ -12,9 +55,9 @@ body {
 	margin: 0px;
 	padding: 0px;
 	overflow-x: hidden;
-	background-color: #eee;
-	color: #555;
-	background-image: url('img/grunge_wall.png');
+	background-color: #111;
+	color: #eee;
+	background-image: url('./img/subtle_carbon.png');
 }
 
 #main {
@@ -25,11 +68,10 @@ body {
 #content {
 	margin: -26px 0px 0px 0px;
 	padding: 20px 20px 20px 20px;
-	font-family: "Ubuntu", helvetica, arial;
+	font-family: "Ubuntu", arial;
 	text-align: justify;
-	color: #000;
-	background-color: rgba(255, 255, 255, 0.40);
-	background-image: url('img/bright_squares_c.png');
+	color: #eee;
+	background-color: rgba(0, 0, 0, 0.90);
 	-webkit-border-radius: 25px;
 	-moz-border-radius: 25px;
 	border-radius: 25px;
@@ -43,10 +85,10 @@ body {
 	padding: 0px;
 	margin: 5px;
 	font-family: "Quantum Round", arial;
-	color: rgba(240,240,240,1); 
+	color: rgba(0,0,0,0); 
 	font-size: 4em;
 	text-shadow: 
-		0px 0px 1px #555,
+		0px 0px 1px #fff,
 		9px 9px 11px #000
 }
 
@@ -90,8 +132,7 @@ canvas {
 	width: 100%;
 	bottom: 0px;
 	font-family: "neuropol_x", arial;
-	/*color: rgba(0,0,0,0); */
-	color: #111;
+	color: rgba(0,0,0,0); 
 	font-size: 2.0em;
 	text-shadow: 
 		0px 0px 1px #e5e5e5,
@@ -146,7 +187,7 @@ canvas {
 }
 
 .itemdesc a {
-	font-family: "Ubuntu", helvetica, arial;
+	font-family: "Ubuntu", arial;
 	font-style: normal;
 	font-weight: 500;
 }
@@ -158,7 +199,6 @@ canvas {
 .itemdate:before {
 	content: '(';
 }
-
 .itemdate:after {
 	content: ')';
 }
@@ -193,12 +233,8 @@ canvas {
 		inset 0 0 1px rgba(238,16,33,1);
 }
 
-a:link, a:visited {
-	color: #ff1124;
-	text-decoration: underline;
-}
-a:hover, a:active {
-	color: #caa;
+a {
+	color: #ee1021;
 	text-decoration: underline;
 }
 
@@ -208,7 +244,7 @@ p {
 }
 
 h1, h2, h3, h4, h5 {
-	font-family: "Ubuntu", helvetica, arial;
+	font-family: "Ubuntu", arial;
 	font-weight: 300;
 	padding: 10px 0px 10px 0px;
 	margin: 0px;
@@ -244,6 +280,10 @@ ul {
 	-moz-border-radius: 18px;
 }
 
-li {
-	list-style-position: inside;
+#contact ul {
+	list-style-type: none;	
+}
+#contact li {
+	font-size: 1.7em;
+	font-weight: 300;
 }
