@@ -10,7 +10,7 @@ from string import Template
 
 TEMPLATE = 'template.html'
 OUTPUT = 'public/index.html'
-TIME_FMT = '%B %d, %Y at %H:%M.'
+TIME_FMT = '%H:%M %B %d, %Y'
 
 def load_template(fname):
 	f = open(fname, 'r')
@@ -71,8 +71,8 @@ def save_template(fname, tpl):
 		html = make_items(data)
 		return html
 
-	def make_presents():
-		data = load_json('presents.json')
+	def make_presentations():
+		data = load_json('presentations.json')
 		html = make_items(data)
 		return html
 
@@ -84,7 +84,7 @@ def save_template(fname, tpl):
 	t = {
 		'projects': make_projects(),
 		'videos': make_videos2(),
-		'presents': make_presents(),
+		'presentations': make_presentations(),
 		'compileTime': datetime.datetime.now(EST()).strftime(TIME_FMT)
 	}
 	html = tpl.safe_substitute(t)
