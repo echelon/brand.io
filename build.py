@@ -4,12 +4,14 @@ Compile my homepage into a static HTML document.
 Copyright 2012 Brandon Thomas.
 """
 
+# TODO: No templating logic should be present here.
+
 import json
 import datetime
 from string import Template
 
-TEMPLATE = 'template.html'
-OUTPUT = 'public/index.html'
+TEMPLATE = 'index.tpl.html'
+OUTPUT = 'output/index.html'
 TIME_FMT = '%H:%M %B %d, %Y'
 
 def load_template(fname):
@@ -56,15 +58,13 @@ def make_items(items):
 
 	return html
 
-class EST(datetime.tzinfo):
-	"""From StackOverflow"""
-	def utcoffset(self, dt):
-		return datetime.timedelta(hours=-5)
-
-	def dst(self, dt):
-		return datetime.timedelta(0)
-
 def save_template(fname, tpl):
+
+	class EST(datetime.tzinfo):
+		def utcoffset(self, dt):
+			return datetime.timedelta(hours=-5)
+		def dst(self, dt):
+			return datetime.timedelta(0)
 
 	def make_projects():
 		data = load_json('projects.json')
@@ -98,3 +98,4 @@ def main():
 
 if __name__ == '__main__':
 	main()
+

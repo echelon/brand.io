@@ -1,4 +1,12 @@
-[	{
+[
+	{
+		"title": "Laser R&amp;D",
+		"date": "2012&ndash;2013",
+		"descr": "Projecting colorful radiation in the shape of objects. My laser projector is driven by code I wrote in both Python and C++. Video games on the side of 5-story buildings? Yes, please.",
+		"img": "/img/icons/laser.jpg",
+		"url": "https://github.com/echelon/laser-testbed"
+	},
+    {
 		"title": "Robotics Mischief",
 		"date": "2012",
 		"descr": "A C++ robot controller daemon that takes instructions over a ZeroMQ socket. Clients have been written for joystick, keyboard, and computer vision/AI control.",

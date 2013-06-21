@@ -1,0 +1,9 @@
+.git/
+.git-bak/
+output_build/
+output/
+img/ASSET_ORIGINAL
+static/img/ASSET_ORIGINAL
+*~
+*pyc
+README.md

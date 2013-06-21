@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>&mdash; brand thomas &mdash;</title>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>&mdash; brandon thomas &mdash;</title>
+        <meta http-equiv="content-type" 
+              content="text/html; charset=UTF-8">
 		<meta http-equiv="content-language" content="en">
-
+		<link rel="stylesheet" type="text/css" href="theme.css" />
 		<!-- Handheld Support -->
 		<meta name="HandheldFriendly" content="true" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-		<!-- Style -->
-		<link rel="stylesheet" type="text/css" href="theme.css" />
+        <meta name="viewport" 
+              content="width=device-width, initial-scale=1.0">
 	</head>
 	<body>
 		<div id="main">
@@ -19,23 +18,10 @@
 
 			<div id="content">
 
-				<!--<div id="sidelink">
-					A <br>
-					B <br>
-					C <br>
-					D <br>
-					E <br>
-				</div>-->
-
 				<div id="about" class="hyphenate">
 				<div id="portrait"><img src="./img/brandon1.jpg"></div>
-				Brandon Thomas is a triple major undergrad at Southern Polytechnic State University in the Computer Science, Biology, and Chemistry programs. Brand loves science, uses Linux and vim, and programs primarily in Python, Javascript, and C++. Computing interests include machine learning and computer graphics. After graduation Brand intends to study computational metabolomics or possibly found a startup company.
+				Brandon Thomas is a triple major undergrad at Southern Polytechnic State University in the Computer Science, Biology, and Chemistry programs. Brandon loves science, uses Linux and vim, and programs primarily in Python, Javascript, and C++. Computing interests include machine learning and computer graphics. After graduation Brandon intends to study computational metabolomics or possibly found a startup company.
 				</div>
-
-				<!-- Activity feed -->
-				<!--<h2>web activity</h2>
-				<div id="activity"></div>
-				<p>The activity feed will be online within the week.</p>-->
 
 				<h2>projects</h2>
 				<div id="projects" class="hyphenate">
@@ -53,12 +39,6 @@
 					${presentations}
 				</div>
 
-				<!--<h2>papers and research</h2>--> 
-	
-				<!--<h2>notes</h2>
-				<div id="notes"></div>
-				<p>These will be online by summer's end.</p>-->
-
 				<div id="contact">
 				<h2>contact</h2>
 				<ul>
@@ -75,14 +55,13 @@
 				<div id="colophon" class="hyphenate">
 					<p>The background animation was constructed from a trimmed portion of the PDB structure 2KE6, &ldquo;SOLUTION STRUCTURE OF K10 TLS&rdquo;. It represents an engineered RNA hairpin in <em>Drosophila</em>.</p>
 
-					<p>Some of the icons used in this page have been taken from Wikipedia.
-					The background is from subtlepatterns.com. The fonts are Ubuntu, Nuropol X, and Quantum Round.</p>
+					<p>Some of the icons used in this page have been taken from Wikipedia. The background is from subtlepatterns.com. The fonts are Ubuntu, Nuropol X, and Quantum Round.</p>
 
 					<p>Page compiled on ${compileTime}.</p>
 				</div>
 			</div>
 
-			<div id="name">brand thomas</div>
+			<div id="name">brandon thomas</div>
 
 		</div>
 
@@ -92,16 +71,12 @@
 		<script type="text/javascript" src="./js/lib/Three.js"></script>
 		<script type="text/javascript" src="./js/pdb.js"></script>
 		<script type="text/javascript" src="./js/main.js"></script>
-		<!--<script type="text/javascript" src="./content.js"></script>-->
 		<script type="text/javascript" src="./js/youtube.js"></script>
 		<script type="text/javascript" src="./js/lib/Hyphenator.js"></script>
 
 		<script type="text/javascript"> 
 			$(function() { 
 				init(); 
-				//installItems('#projects', PROJECTS);
-				//installItems('#presentations', PRESENTATIONS);
-				//installVideos();
 				animateVideos();
 				Hyphenator.run();
 			});
